@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales and Profit Dashboard</title>
+<style>
+:root{--bg:#F4F6F8;--surface:#FFFFFF;--ink:#14212B;--muted:#53636F;--line:#D3DBE2;--accent:#0F5FA8;--on-accent:#FFFFFF}
+@media (prefers-color-scheme: dark){:root{--bg:#0F171E;--surface:#17222C;--ink:#E8EEF3;--muted:#9FB0BD;--line:#2B3A47;--accent:#6CB6F2;--on-accent:#0A1A28;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.55;
+padding:24px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+main{max-width:860px;margin:0 auto;display:grid;gap:22px}
+h1{margin:0;font-size:clamp(1.7rem,6vw,2.4rem);line-height:1.15}
+.by{color:var(--muted);margin:6px 0 0}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px}
+.shot img{display:block;width:100%;height:auto;border-radius:8px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:10px}
+h2{margin:0;font-size:1.2rem}
+ul{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.links{display:grid;gap:10px}
+.btn{display:block;text-align:center;padding:14px 16px;border-radius:12px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--on-accent)}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.foot{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sales and Profit Dashboard</h1>
+    <p class="by">Created by Sana Naik</p>
+  </header>
+
+  <p>An interactive Power BI dashboard that analyses sales, profit and units sold across countries, products and customer segments.</p>
+
+  <div class="shot">
+    <img src="Dashboard%20Preview.png" alt="Preview of the Power BI sales and profit dashboard">
+  </div>
+
+  <section class="panel">
+    <h2>What the dashboard shows</h2>
+    <ul>
+      <li>Sales, profit and units sold at a glance</li>
+      <li>Comparison across countries</li>
+      <li>Performance of different products</li>
+      <li>Breakdown by customer segment</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Files</h2>
+    <div class="links">
+      <a class="btn" href="finance%20dashboard.pbit">Download the Power BI template (.pbit)</a>
+      <a class="btn alt" href="sales_raw_data.xlsx">Download the raw sales data (.xlsx)</a>
+    </div>
+    <p class="foot">Open the .pbit file in Power BI Desktop to explore the dashboard.</p>
+  </section>
+</main>
+</body>
+</html>
